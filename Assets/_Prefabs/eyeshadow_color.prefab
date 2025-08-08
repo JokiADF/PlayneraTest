@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3159648407777560713}
   - component: {fileID: 4165290789881713057}
   - component: {fileID: 8951172324731100483}
+  - component: {fileID: 2490341685240124280}
   m_Layer: 5
   m_Name: eyeshadow_color
   m_TagString: Untagged
@@ -120,3 +121,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2490341685240124280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144217522607616327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da3780b5487742b3ab5a4c76818001ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forHand: {fileID: 0}
+  button: {fileID: 8951172324731100483}
+  brushColor: {fileID: 0}
+  colorIndex: 0
