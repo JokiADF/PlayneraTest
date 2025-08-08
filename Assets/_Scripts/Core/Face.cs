@@ -148,8 +148,11 @@ namespace MakeupGame.Core
                 lips.sprite = lipSprite;
                 lips.enabled = true;
                 
-                lips?.DOKill();
-                lips.DOFade(1f, 0.5f);
+                if (lips.color.a <= 0)
+                {
+                    lips?.DOKill();
+                    lips.DOFade(1f, 0.5f);
+                }
             }
             else
                 Debug.LogWarning($"[Face] Failed to load lipstick sprite for color index {colorIndex}");
@@ -165,8 +168,11 @@ namespace MakeupGame.Core
                 eyes.sprite = eyeSprite;
                 eyes.enabled = true;
                 
-                eyes?.DOKill();
-                eyes.DOFade(1f, 0.5f);
+                if(eyes.color.a <= 0)
+                {
+                    eyes?.DOKill();
+                    eyes.DOFade(1f, 0.5f);
+                }
             }
             else
                 Debug.LogWarning($"[Face] Failed to load eye shadow sprite for color index {colorIndex}");
