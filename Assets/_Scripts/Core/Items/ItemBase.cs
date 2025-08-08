@@ -54,9 +54,6 @@ namespace MakeupGame
                 _originalParent = forHand.parent;
                 OriginalPosition = forHand.position;
             }
-            
-            Debug.Log(forHand.position);
-            Debug.Log(OriginalPosition);
         }
 
         public virtual void Initialize(Action<ItemBase> onClick, IResourceService resourceService)
@@ -77,9 +74,6 @@ namespace MakeupGame
 
         public virtual void Take(Transform handParent)
         {
-            Debug.Log(forHand.position);
-            Debug.Log(OriginalPosition);
-
             if (forHand == null || handParent == null)
             {
                 Debug.LogWarning($"[{GetType().Name}] Cannot take item - missing components");
